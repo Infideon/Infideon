@@ -1,0 +1,152 @@
+<html>
+	<head>
+		<title>Loading...</title>
+		<style>
+			body{
+				padding:0;
+				margin:0;
+				position:absolute;
+				background-color:#191919;
+				background-image:url(stars.png);
+			}
+			
+			#twinkle{
+				position:fixed;
+				width:200%;
+				height:200%;
+				background-image:url(black.png);
+				background-size:5%;
+				background-repeat:space;
+				-webkit-animation: twinkling 18s infinite linear;
+			}
+			
+			@-webkit-keyframes twinkling {
+				0% {
+					right:-100%;
+					top:-100%;
+				}
+				100% {
+					right:0px;
+					top:0px;
+				}
+			}
+			
+			#upper1-1{
+				position:fixed;
+				-webkit-animation: marquee1-1 25s infinite linear;
+				width:100%;
+				height:100%;
+			}
+			#upper1-2{
+				position:fixed;
+				-webkit-animation: marquee1-2 25s infinite linear;
+				width:100%;
+				height:100%;
+			}
+			@-webkit-keyframes marquee1-1 {
+				0% {
+					right:-100%;
+				}
+				100% {
+					right:0px;
+				}
+			}
+			@-webkit-keyframes marquee1-2 {
+				0% {
+					right:0px;
+				}
+				100% {
+					right:100%;
+				}
+			}
+			
+			
+			
+			#upper2-1{
+				position:fixed;
+				-webkit-animation: marquee2-1 31s infinite linear;
+				width:100%;
+				height:100%;
+			}
+			#upper2-2{
+				position:fixed;
+				-webkit-animation: marquee2-2 31s infinite linear;
+				width:100%;
+				height:100%;
+			}
+			@-webkit-keyframes marquee2-1 {
+				0% {
+					right:-100%;
+				}
+				100% {
+					right:0px;
+				}
+			}
+			@-webkit-keyframes marquee2-2 {
+				0% {
+					right:0px;
+				}
+				100% {
+					right:100%;
+				}
+			}
+			
+			
+			
+			#upper3-1{
+				position:fixed;
+				-webkit-animation: marquee3-1 37s infinite linear;
+				width:100%;
+				height:100%;
+			}
+			#upper3-2{
+				position:fixed;
+				-webkit-animation: marquee3-2 37s infinite linear;
+				width:100%;
+				height:100%;
+			}
+			@-webkit-keyframes marquee3-1 {
+				0% {
+					right:-100%;
+				}
+				100% {
+					right:0px;
+				}
+			}
+			@-webkit-keyframes marquee3-2 {
+				0% {
+					right:0px;
+				}
+				100% {
+					right:100%;
+				}
+			}
+			
+			#container{
+				positon:relative;
+				margin-top:10vmax;
+				width:100%;
+				height:100%;
+			}
+			
+			#text{
+				color:white;
+				font-family:Verdana;
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div id="twinkle">
+			<div id="container">
+				<div id="text"><h1>Loading...</h1></div>
+			</div>
+		</div>
+		<div id="upper1-1"><img src="mountains.png" width="100%"></img></div>
+		<div id="upper1-2"><img src="mountains.png" width="100%"></img></div>
+		<div id="upper2-1"><img src="foothills.png" width="100%"></img></div>
+		<div id="upper2-2"><img src="foothills.png" width="100%"></img></div>
+		<div id="upper3-1"><img src="city.png" width="100%"></img></div>
+		<div id="upper3-2"><img src="city.png" width="100%"></img></div>
+	</body>
+</html>
